@@ -9,7 +9,7 @@
 
     <item
         android:id="@+id/navigation_explore"
-        android:icon="@drawable/globe"
+        android:icon="@drawable/books"
         android:title="@string/explore"
         />
 
