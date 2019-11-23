@@ -30,14 +30,24 @@ public class ExploreFragment extends Fragment {
 
         initPlaylists();
         initExplore();
+        initAppBar();
     }
 
 
 
 
+    private void initAppBar(){
 
+        getActivity().findViewById(R.id.search).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((MainActivity)getActivity()).loadFragment(new SearchFragment());
+            }
+        });
 
-    private ArrayList<String> getNames() {
+    }
+
+    private ArrayList<String> getPlaylistsNames() {
 
         ArrayList<String> names =new ArrayList<String>();
         names.add("דרמה");
@@ -119,7 +129,7 @@ public class ExploreFragment extends Fragment {
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL,false);
         RecyclerView playlistsRV = getActivity().findViewById(R.id.playlistsRV);
         playlistsRV.setLayoutManager(layoutManager);
-        PlaylistAdapter adapter = new PlaylistAdapter(getActivity(),getNames(),getCovers());
+        PlaylistAdapter adapter = new PlaylistAdapter(getActivity(),getPlaylistsNames(),getCovers());
         playlistsRV.setAdapter(adapter);
     }
 
