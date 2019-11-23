@@ -1,21 +1,18 @@
 package com.reading7;
 
 
-import android.content.Context;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.SearchView;
 
 import com.reading7.Adapters.TabsPagerAdapter;
 
@@ -40,7 +37,7 @@ public class SearchFragment extends Fragment {
 
     private void initSearchView(){
 
-        android.support.v7.widget.SearchView searchView = getActivity().findViewById(R.id.searchView);
+        androidx.appcompat.widget.SearchView searchView = getActivity().findViewById(R.id.searchView);
         searchView.setIconifiedByDefault(false);
         searchView.requestFocus();
 
@@ -49,7 +46,7 @@ public class SearchFragment extends Fragment {
         imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
 
         //remove underline
-        View v = getActivity().findViewById(android.support.v7.appcompat.R.id.search_plate);
+        View v = getActivity().findViewById(androidx.appcompat.R.id.search_plate);
         v.setBackgroundColor(getActivity().getResources().getColor(R.color.transparent));
 
         //remove close button
@@ -58,7 +55,7 @@ public class SearchFragment extends Fragment {
         closeBtn.setImageDrawable(null);
 
         //remove search icon
-        ImageView searchViewIcon = (ImageView)searchView.findViewById(android.support.v7.appcompat.R.id.search_mag_icon);
+        ImageView searchViewIcon = (ImageView)searchView.findViewById(androidx.appcompat.R.id.search_mag_icon);
         ((ViewGroup)searchViewIcon.getParent()).removeView(searchViewIcon);
 
     }
