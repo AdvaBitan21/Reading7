@@ -38,7 +38,7 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.ViewHolder>  {
 
         HomeFragment.Post post = posts.get(i);
         viewHolder.ratingBar.setRating(post.rating);
-        viewHolder.cover.setImageResource(mContext.getResources().getIdentifier("cover"+(i+1), "drawable", mContext.getPackageName()));
+        viewHolder.cover.setImageResource(mContext.getResources().getIdentifier("cover"+(i+1), "mipmap", mContext.getPackageName()));
         viewHolder.userName.setText(post.userName);
         viewHolder.bookName.setText(post.bookName);
         viewHolder.postTime.setText(post.postTime);

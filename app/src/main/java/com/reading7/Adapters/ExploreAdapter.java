@@ -69,7 +69,7 @@ public class ExploreAdapter extends RecyclerView.Adapter<ExploreAdapter.ViewHold
         rating.setColorFilter(Color.parseColor("#FFC21C"), PorterDuff.Mode.SRC_ATOP);
 
         viewHolder.ratingBar.setRating(ratings.get(i));
-        viewHolder.cover.setImageResource(mContext.getResources().getIdentifier("cover"+(i+1), "drawable", mContext.getPackageName()));
+        viewHolder.cover.setImageResource(mContext.getResources().getIdentifier("cover"+(i+1), "mipmap", mContext.getPackageName()));
 
     }
 

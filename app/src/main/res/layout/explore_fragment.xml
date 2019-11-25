@@ -101,7 +101,9 @@
                 android:layout_height="match_parent"
                 android:nestedScrollingEnabled="false"
                 android:paddingLeft="3dp"
-                android:paddingRight="3dp" />
+                android:paddingRight="3dp"
+                android:paddingBottom="2dp"
+                android:clipToPadding="true"/>
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

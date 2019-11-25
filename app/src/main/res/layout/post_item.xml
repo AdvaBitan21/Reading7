@@ -23,7 +23,7 @@
             android:id="@+id/coverImage"
             android:layout_width="100dp"
             android:layout_height="140dp"
-            android:background="@drawable/cover9"
+            android:background="@mipmap/cover1"
             android:scaleType="fitXY" />
 
     </androidx.cardview.widget.CardView>

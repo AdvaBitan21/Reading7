@@ -53,7 +53,7 @@ public class PlaylistAdapter extends RecyclerView.Adapter<PlaylistAdapter.ViewHo
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
 
         viewHolder.playlistName.setText(names.get(i));
-        viewHolder.cover.setImageResource(mContext.getResources().getIdentifier("cover"+(i+1), "drawable", mContext.getPackageName()));
+        viewHolder.cover.setImageResource(mContext.getResources().getIdentifier("cover"+(i+1), "mipmap", mContext.getPackageName()));
     }
 
     @Override

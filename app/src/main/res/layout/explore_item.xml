@@ -13,11 +13,11 @@
 
         <ImageView
             android:id="@+id/coverImage"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="150dp"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/cover1" />
+            app:srcCompat="@mipmap/cover1" />
 
         <RatingBar
             android:id="@+id/ratingBar"
