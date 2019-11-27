@@ -6,6 +6,7 @@ android {
     defaultConfig {
         applicationId "com.reading7"
         minSdkVersion 16
+        multiDexEnabled true
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -39,6 +40,9 @@ dependencies {
 
     //Circle imageView
     implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+
+    implementation 'com.android.support:multidex:1.0.3'
 }
 
 
