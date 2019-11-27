@@ -6,7 +6,7 @@
     density="420dpi"
     format="10"
     plugin-version="3.3.2"
-    timestamp="1574849478418"
+    timestamp="1574851085703"
     token="6866688542121618439"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -65,7 +65,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1574849478418"
+        timestamp="1574851085703"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/galvinter/Documents/לימודים/סמסטר 7/פרויקט שנתי/Reading7/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
