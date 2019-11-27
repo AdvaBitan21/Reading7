@@ -1,0 +1,4 @@
+#Mon Nov 25 18:40:50 IST 2019
+base.0=/Users/galvinter/Documents/לימודים/סמסטר 7/פרויקט שנתי/Reading7/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
